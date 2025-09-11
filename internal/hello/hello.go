@@ -8,5 +8,5 @@ import "fmt"
 // Função simples para demonstrar organização do código
 func SayHello() {
 	// Imprime uma mensagem no console
-	fmt.Println("Olá, bem vindo a aula de golang 👋")
+	fmt.Println("Olá, bem vindo a aula de golang // Aluno Keven👋")
 }
