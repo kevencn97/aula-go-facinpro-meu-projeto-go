@@ -7,6 +7,7 @@ import (
 	"aulago/internal/anamnese"
 	"aulago/internal/fibonacci"
 	"aulago/internal/hello"
+	"aulago/internal/saudacao"
 	"fmt"
 )
 
@@ -34,4 +35,21 @@ func main() {
 
 	fmt.Println("Funcção Completa")
 	anamnese.ExecutarAnamnese(nome, idade, peso, altura)
+
+	// func saudacao
+
+	mensagem := saudacao.GerarSaudacao("Aluno Keven, Facinpro")
+	fmt.Println(mensagem)
+
+	// func anonima
+
+	gerarSaudacao := func(nome string) string {
+		return fmt.Sprintf("Olá, %s! Func presente no modulo saudação.", nome)
+	}
+
+	// ------------
+
+	mensagem2 := gerarSaudacao("Aluno kEV2, Facinpro")
+
+	fmt.Println(mensagem2)
 }
